@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaly's Fri Chicken – The Real Recipe | Best in Jaranwala</title>
+  <meta name="description" content="Kaly's Fri Chicken – Jaranwala's finest fried chicken, gourmet burgers, premium pizzas & shawarmas. Order now for delivery!" />
+  <meta name="theme-color" content="#C41E3A" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700;800&family=Oswald:wght@400;500;600;700&family=Pacifico&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-flame">🔥</div>
+      <h2>Kaly's <span>Fri Chicken</span></h2>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/923014317000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#">
+        <span class="logo-icon">🍗</span>
+        <span class="logo-text">Kaly's <span class="logo-highlight">Fri Chicken</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:0414317000" class="btn btn-order-nav">
+          <i class="fas fa-phone-alt me-2"></i>Order Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-slider">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=1920&q=80&fit=crop')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&q=80&fit=crop')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=80&fit=crop')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 hero-text-col">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Now Delivering 11:30am – 11:59pm</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Kaly's</span>
+            <span class="title-line title-golden">Fri Chicken</span>
+          </h1>
+          <div class="hero-tagline-wrap">
+            <span class="hero-tagline" id="heroTagline"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+          <p class="hero-sub">Your Wish, We Deliver</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-fire btn-lg">
+              <i class="fas fa-shopping-bag me-2"></i>Order Now
+              <span class="btn-shine"></span>
+            </a>
+            <a href="#menu" class="btn btn-ghost btn-lg">
+              <i class="fas fa-utensils me-2"></i>Explore Menu
+            </a>
+          </div>
+          <div class="hero-info-pills">
+            <span class="info-pill"><i class="fas fa-motorcycle"></i> Free Delivery</span>
+            <span class="info-pill"><i class="fas fa-clock"></i> 30 Min</span>
+            <span class="info-pill"><i class="fas fa-star"></i> 4.8 Rating</span>
+          </div>
+        </div>
+        <div class="col-lg-5 hero-img-col d-none d-lg-block">
+          <div class="hero-food-showcase">
+            <div class="hero-main-img">
+              <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80&fit=crop" alt="Crispy Fried Chicken" loading="eager" />
+            </div>
+            <div class="hero-floating-item floating-1">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=150&q=80&fit=crop" alt="Pizza" />
+            </div>
+            <div class="hero-floating-item floating-2">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=150&q=80&fit=crop" alt="Burger" />
+            </div>
+            <div class="hero-price-badge">
+              <span class="price-from">From</span>
+              <span class="price-amount">Rs.199</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,30 1440,60 L1440,120 L0,120 Z" fill="var(--charcoal)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES STRIP ========== -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon"><i class="fas fa-fire"></i></div>
+          </div>
+          <div class="feature-text">
+            <h4>Flame Grilled</h4>
+            <p>Cooked fresh with our secret recipe</p>
+          </div>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon"><i class="fas fa-motorcycle"></i></div>
+          </div>
+          <div class="feature-text">
+            <h4>Fast Delivery</h4>
+            <p>Min order Rs.600 | Hot at your door</p>
+          </div>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon"><i class="fas fa-pizza-slice"></i></div>
+          </div>
+          <div class="feature-text">
+            <h4>Best Pizza</h4>
+            <p>Best pizza in your city</p>
+          </div>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+          </div>
+          <div class="feature-text">
+            <h4>Open Late</h4>
+            <p>11:30am till midnight daily</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROMO BANNER ========== -->
+  <section class="promo-banner">
+    <div class="promo-bg" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80&fit=crop')"></div>
+    <div class="promo-overlay"></div>
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right">
+          <span class="promo-label">Limited Time Offer</span>
+          <h2 class="promo-title">Diamond Deal 1 – Only <span>Rs.699</span></h2>
+          <p class="promo-desc">1 Zinger Burger + 1 Reg Fries + 1 Reg Drink</p>
+        </div>
+        <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+          <a href="#deals" class="btn btn-fire btn-lg">View All Deals <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE DEALS ========== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>🔥 Diamond Deal 1 – Rs.699</span>
+        <span>⭐ Diamond Deal 2 – Rs.880</span>
+        <span>🍕 Deal 13 – Rs.999</span>
+        <span>🍔 Deal 16 – Rs.799</span>
+        <span>🎉 Combo 3 – Rs.2280</span>
+        <span>🔥 Diamond Deal 1 – Rs.699</span>
+        <span>⭐ Diamond Deal 2 – Rs.880</span>
+        <span>🍕 Deal 13 – Rs.999</span>
+        <span>🍔 Deal 16 – Rs.799</span>
+        <span>🎉 Combo 3 – Rs.2280</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FEATURED / BESTSELLERS ========== -->
+  <section id="featured" class="featured-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">What's Popular</span>
+        <h2 class="section-title">Our <span class="text-golden">Bestsellers</span></h2>
+        <p class="section-sub">Most loved items by our customers</p>
+      </div>
+      <div class="featured-scroll" data-aos="fade-up" data-aos-delay="100">
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&q=80&fit=crop" alt="Zinger Burger" loading="lazy" />
+            <span class="item-tag tag-bestseller">Bestseller</span>
+            <div class="featured-overlay">
+              <a href="tel:0414317000" class="btn btn-fire btn-sm">Order Now</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <h4>Zinger Burger</h4>
+            <p class="featured-desc">Crispy zinger fillet with special sauce</p>
+            <div class="featured-bottom">
+              <span class="featured-price">Rs.370</span>
+              <div class="featured-rating"><i class="fas fa-star"></i> 4.9</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400&q=80&fit=crop" alt="Special Zinger Burger" loading="lazy" />
+            <span class="item-tag tag-special">Special</span>
+            <div class="featured-overlay">
+              <a href="tel:0414317000" class="btn btn-fire btn-sm">Order Now</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <h4>Special Zinger</h4>
+            <p class="featured-desc">Double loaded zinger with cheese</p>
+            <div class="featured-bottom">
+              <span class="featured-price">Rs.499</span>
+              <div class="featured-rating"><i class="fas fa-star"></i> 4.8</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80&fit=crop" alt="Chicken Extreme Pizza" loading="lazy" />
+            <span class="item-tag tag-premium">Premium</span>
+            <div class="featured-overlay">
+              <a href="tel:0414317000" class="btn btn-fire btn-sm">Order Now</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <h4>Chicken Extreme Pizza</h4>
+            <p class="featured-desc">3 flavour chicken, olives & jalapeno</p>
+            <div class="featured-bottom">
+              <span class="featured-price">from Rs.699</span>
+              <div class="featured-rating"><i class="fas fa-star"></i> 4.9</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&q=80&fit=crop" alt="Chicken Paratha Roll" loading="lazy" />
+            <span class="item-tag tag-classic">Classic</span>
+            <div class="featured-overlay">
+              <a href="tel:0414317000" class="btn btn-fire btn-sm">Order Now</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <h4>Chicken Paratha Roll</h4>
+            <p class="featured-desc">Hand-rolled with fresh chicken</p>
+            <div class="featured-bottom">
+              <span class="featured-price">Rs.299</span>
+              <div class="featured-rating"><i class="fas fa-star"></i> 4.7</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&q=80&fit=crop" alt="Kaly's Special Pasta" loading="lazy" />
+            <span class="item-tag tag-new">New</span>
+            <div class="featured-overlay">
+              <a href="tel:0414317000" class="btn btn-fire btn-sm">Order Now</a>
+            </div>
+          </div>
+          <div class="featured-info">
+            <h4>Kaly's Special Pasta</h4>
+            <p class="featured-desc">Our signature creamy pasta</p>
+            <div class="featured-bottom">
+              <span class="featured-price">Rs.499 / Rs.699</span>
+              <div class="featured-rating"><i class="fas fa-star"></i> 4.8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU SECTION ========== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Explore</span>
+        <h2 class="section-title">Our <span class="text-golden">Menu</span></h2>
+        <p class="section-sub">Freshly prepared with the finest ingredients</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="menu-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-th me-1"></i>All</button>
+        <button class="filter-btn" data-filter="rolls"><i class="fas fa-pepper-hot me-1"></i>Rolls & Shawarmas</button>
+        <button class="filter-btn" data-filter="burgers"><i class="fas fa-burger me-1"></i>Burgers</button>
+        <button class="filter-btn" data-filter="pizza"><i class="fas fa-pizza-slice me-1"></i>Pizza</button>
+        <button class="filter-btn" data-filter="pastas"><i class="fas fa-bowl-food me-1"></i>Pastas</button>
+        <button class="filter-btn" data-filter="arabic"><i class="fas fa-scroll me-1"></i>Arabic Rolls</button>
+        <button class="filter-btn" data-filter="sauces"><i class="fas fa-droplet me-1"></i>Sauces</button>
+      </div>
+
+      <!-- ====== ROLLS & SHAWARMAS ====== -->
+      <div class="menu-category" data-category="rolls">
+        <div class="category-header" data-aos="fade-right">
+          <div class="category-icon"><i class="fas fa-pepper-hot"></i></div>
+          <div>
+            <h3 class="category-title">Rolls & Shawarmas</h3>
+            <p class="category-desc">Hand-rolled perfection with bold flavours</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&q=80&fit=crop" alt="Chicken Paratha Roll" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Chicken Paratha Roll</h5>
+                <p class="menu-card-desc">Juicy chicken wrapped in fresh paratha</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.299</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1561651823-34feb02250e4?w=400&q=80&fit=crop" alt="Chicken Special Shawarma" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Chicken Special Shawarma</h5>
+                <p class="menu-card-desc">Loaded shawarma with special sauce</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.250</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&q=80&fit=crop" alt="Zinger Shawarma" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Zinger Shawarma (Reg)</h5>
+                <p class="menu-card-desc">Crispy zinger strips in warm wrap</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.270</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&q=80&fit=crop" alt="Zinger Shawarma Large" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Zinger Shawarma (Large)</h5>
+                <p class="menu-card-desc">Extra large with loaded fillings</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.320</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?w=400&q=80&fit=crop" alt="Vegitable Shawarma" loading="lazy" />
+                <span class="menu-badge badge-veg">Veg</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Vegitable Shawarma</h5>
+                <p class="menu-card-desc">Fresh veggies – No Chicken</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.199</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&q=80&fit=crop" alt="Kebab Paratha Roll" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Kebab Paratha Roll</h5>
+                <p class="menu-card-desc">Smokey kebab in fresh paratha</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.299</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=400&q=80&fit=crop" alt="Zinger Paratha Roll" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Zinger Paratha Roll</h5>
+                <p class="menu-card-desc">Crispy zinger fillet in paratha</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.370</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&q=80&fit=crop" alt="Chicken Chilli Milli Roll" loading="lazy" />
+                <span class="menu-badge badge-spicy">🌶 Spicy</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Chicken Chilli Milli Roll</h5>
+                <p class="menu-card-desc">Special Chilli Milli Sauce</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.299</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&q=80&fit=crop" alt="Chicken & Cheese Paratha Roll" loading="lazy" />
+                <span class="menu-badge badge-cheese">🧀 Cheese</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Chicken & Cheese Paratha Roll</h5>
+                <p class="menu-card-desc">Loaded with melted cheese</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.380</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80&fit=crop" alt="Chicken & Cheese Special Shawarma" loading="lazy" />
+                <span class="menu-badge badge-cheese">🧀 Cheese</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Chicken & Cheese Shawarma</h5>
+                <p class="menu-card-desc">Special shawarma with melted cheese</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.350</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== BURGERS ====== -->
+      <div class="menu-category" data-category="burgers">
+        <div class="category-header" data-aos="fade-right">
+          <div class="category-icon"><i class="fas fa-burger"></i></div>
+          <div>
+            <h3 class="category-title">Burgers</h3>
+            <p class="category-desc">Stacked, juicy & absolutely irresistible</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400&q=80&fit=crop" alt="Zinger Burger Mini" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Zinger Burger Mini</h5>
+                <p class="menu-card-desc">Small but packed with crunch</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.270</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400&q=80&fit=crop" alt="Zinger Burger" loading="lazy" />
+                <span class="menu-badge badge-hot">🔥 Hot</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Zinger Burger</h5>
+                <p class="menu-card-desc">Our signature crispy zinger fillet</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.370</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80&fit=crop" alt="Reggy Burger Single" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Reggy Burger Single</h5>
+                <p class="menu-card-desc">Single patty – Without Cheese</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.299</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80&fit=crop" alt="Reggy Burger Double" loading="lazy" />
+                <span class="menu-badge badge-cheese">🧀 Cheese</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Reggy Burger Double Patty</h5>
+                <p class="menu-card-desc">Double patty with cheese slice</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.499</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&q=80&fit=crop" alt="Steak Burger Single" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Steak Burger Single Patty</h5>
+                <p class="menu-card-desc">Juicy steak patty, fresh toppings</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.350</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=400&q=80&fit=crop" alt="Steak Burger Double" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Steak Burger Double Patty</h5>
+                <p class="menu-card-desc">Double stack of juicy steak</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.550</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&q=80&fit=crop" alt="Special Zinger Burger" loading="lazy" />
+                <span class="menu-badge badge-hot">⭐ Special</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Special Zinger Burger</h5>
+                <p class="menu-card-desc">Premium loaded zinger experience</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.499</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400&q=80&fit=crop" alt="Chapli Kebab Burger" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Chapli Kebab Burger</h5>
+                <p class="menu-card-desc">Traditional chapli kebab patty</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.299</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=400&q=80&fit=crop" alt="Smokey Burger" loading="lazy" />
+                <span class="menu-badge badge-cheese">🧀 Cheese</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Smokey Burger</h5>
+                <p class="menu-card-desc">Chicken & Cheese inside</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.299</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?w=400&q=80&fit=crop" alt="Fish Burger Single" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Fish Burger Single Patty</h5>
+                <p class="menu-card-desc">Fresh fish fillet, crispy coated</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.599</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1551615593-ef5fe247e8f7?w=400&q=80&fit=crop" alt="Fish Burger Double" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Fish Burger Double Patty</h5>
+                <p class="menu-card-desc">Double fish, double delight</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.999</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1606131731446-5568d87113aa?w=400&q=80&fit=crop" alt="Fillet Burger" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Fillet Burger</h5>
+                <p class="menu-card-desc">Boneless chicken fillet burger</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.399</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== PIZZA ====== -->
+      <div class="menu-category" data-category="pizza">
+        <div class="category-header" data-aos="fade-right">
+          <div class="category-icon"><i class="fas fa-pizza-slice"></i></div>
+          <div>
+            <h3 class="category-title">Pizza – Premium Flavours</h3>
+            <p class="category-desc">Stone-baked with premium toppings</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="pizza-card">
+              <div class="pizza-card-img">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&fit=crop" alt="Chicken Extreme" loading="lazy" />
+                <span class="menu-badge badge-hot">🔥 Best Seller</span>
+              </div>
+              <div class="pizza-card-body">
+                <h4>Chicken Extreme</h4>
+                <p>3 Different Flavour Chicken, Green Olives, Bell Pepper, Jalapeno, Secret Special Sauce</p>
+                <div class="pizza-sizes">
+                  <div class="size-chip"><span class="size-label">S</span><span class="size-price">Rs.699</span></div>
+                  <div class="size-chip"><span class="size-label">M</span><span class="size-price">Rs.1299</span></div>
+                  <div class="size-chip"><span class="size-label">L</span><span class="size-price">Rs.1799</span></div>
+                  <div class="size-chip"><span class="size-label">XL</span><span class="size-price">Rs.2499</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pizza-card">
+              <div class="pizza-card-img">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80&fit=crop" alt="Da Le'Bistro" loading="lazy" />
+              </div>
+              <div class="pizza-card-body">
+                <h4>Da Le'Bistro</h4>
+                <p>Mayo Dip Sauce, Red Sauce, Ketchup, Black Olives, Jalapeno, Bell Pepper, Kebab Chunks</p>
+                <div class="pizza-sizes">
+                  <div class="size-chip"><span class="size-label">S</span><span class="size-price">Rs.699</span></div>
+                  <div class="size-chip"><span class="size-label">M</span><span class="size-price">Rs.1299</span></div>
+                  <div class="size-chip"><span class="size-label">L</span><span class="size-price">Rs.1799</span></div>
+                  <div class="size-chip"><span class="size-label">XL</span><span class="size-price">Rs.2499</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="pizza-card">
+              <div class="pizza-card-img">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80&fit=crop" alt="Texas BBQ" loading="lazy" />
+              </div>
+              <div class="pizza-card-body">
+                <h4>Texas BBQ</h4>
+                <p>Red Sauce, Texas & Smokey Chicken, Smokey BBQ Sauce, Bell Pepper, Tomatoes</p>
+                <div class="pizza-sizes">
+                  <div class="size-chip"><span class="size-label">S</span><span class="size-price">Rs.699</span></div>
+                  <div class="size-chip"><span class="size-label">M</span><span class="size-price">Rs.1299</span></div>
+                  <div class="size-chip"><span class="size-label">L</span><span class="size-price">Rs.1799</span></div>
+                  <div class="size-chip"><span class="size-label">XL</span><span class="size-price">Rs.2499</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pizza-card">
+              <div class="pizza-card-img">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600&q=80&fit=crop" alt="Crunchy Supreme" loading="lazy" />
+                <span class="menu-badge badge-hot">⭐ Premium</span>
+              </div>
+              <div class="pizza-card-body">
+                <h4>Crunchy Supreme</h4>
+                <p>Special Sauce, Crispy Chicken Chunks, Special Supreme Flavor</p>
+                <div class="pizza-sizes">
+                  <div class="size-chip"><span class="size-label">M</span><span class="size-price">Rs.1199</span></div>
+                  <div class="size-chip"><span class="size-label">L</span><span class="size-price">Rs.1699</span></div>
+                  <div class="size-chip"><span class="size-label">XL</span><span class="size-price">Rs.2399</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== PASTAS ====== -->
+      <div class="menu-category" data-category="pastas">
+        <div class="category-header" data-aos="fade-right">
+          <div class="category-icon"><i class="fas fa-bowl-food"></i></div>
+          <div>
+            <h3 class="category-title">Pastas</h3>
+            <p class="category-desc">Creamy, cheesy & absolutely delicious</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80&fit=crop" alt="Creamy Pasta" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Creamy Pasta</h5>
+                <p class="menu-card-desc">Rich & creamy white sauce pasta</p>
+                <div class="menu-card-footer pasta-footer">
+                  <span class="menu-price-dual"><span>Half Rs.399</span><span>Full Rs.599</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=400&q=80&fit=crop" alt="Kaly's Special Pasta" loading="lazy" />
+                <span class="menu-badge badge-new">✨ New</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Kaly's Special Pasta</h5>
+                <p class="menu-card-desc">Our signature special recipe</p>
+                <div class="menu-card-footer pasta-footer">
+                  <span class="menu-price-dual"><span>Half Rs.499</span><span>Full Rs.699</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80&fit=crop" alt="Pizza Pasta" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Pizza Pasta</h5>
+                <p class="menu-card-desc">Pizza flavours meet pasta</p>
+                <div class="menu-card-footer pasta-footer">
+                  <span class="menu-price-dual"><span>Half Rs.399</span><span>Full Rs.599</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&q=80&fit=crop" alt="Tandoori Pasta" loading="lazy" />
+                <span class="menu-badge badge-spicy">🌶 Spicy</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Tandoori Pasta</h5>
+                <p class="menu-card-desc">Smokey tandoori chicken pasta</p>
+                <div class="menu-card-footer pasta-footer">
+                  <span class="menu-price-dual"><span>Half Rs.370</span><span>Full Rs.550</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?w=400&q=80&fit=crop" alt="Crunchy Pasta" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Crunchy Pasta</h5>
+                <p class="menu-card-desc">Crispy chicken chunks on pasta</p>
+                <div class="menu-card-footer pasta-footer">
+                  <span class="menu-price-dual"><span>Half Rs.450</span><span>Full Rs.650</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400&q=80&fit=crop" alt="Vegitable Pasta" loading="lazy" />
+                <span class="menu-badge badge-veg">🌿 Veg</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Vegitable Pasta</h5>
+                <p class="menu-card-desc">Fresh veggies – No Chicken</p>
+                <div class="menu-card-footer pasta-footer">
+                  <span class="menu-price-dual"><span>Half Rs.320</span><span>Full Rs.499</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== ARABIC ROLLS ====== -->
+      <div class="menu-category" data-category="arabic">
+        <div class="category-header" data-aos="fade-right">
+          <div class="category-icon"><i class="fas fa-scroll"></i></div>
+          <div>
+            <h3 class="category-title">Arabic Rolls</h3>
+            <p class="category-desc">Authentic Arabic-style rolls</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=400&q=80&fit=crop" alt="Arabic Roll" loading="lazy" />
+              </div>
+              <div class="menu-card-body">
+                <h5>Arabic Roll (4 pcs of 2 rolls)</h5>
+                <p class="menu-card-desc">2 Slice Cucumber, 1 Slice Carrot & P1 Dip Sauce</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.599</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="menu-card">
+              <div class="menu-card-img">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80&fit=crop" alt="Behari Special Roll" loading="lazy" />
+                <span class="menu-badge badge-hot">⭐ Special</span>
+              </div>
+              <div class="menu-card-body">
+                <h5>Behari Special Roll (4 pcs)</h5>
+                <p class="menu-card-desc">2 Slice Cucumber, 1 Slice Carrot & P1 Dip Sauce</p>
+                <div class="menu-card-footer">
+                  <span class="menu-price">Rs.650</span>
+                  <a href="tel:0414317000" class="btn-order-sm"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== SAUCES ====== -->
+      <div class="menu-category" data-category="sauces">
+        <div class="category-header" data-aos="fade-right">
+          <div class="category-icon"><i class="fas fa-droplet"></i></div>
+          <div>
+            <h3 class="category-title">Sauces</h3>
+            <p class="category-desc">All in 2oz / P2 Size Dip Packing</p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=200&q=80&fit=crop" alt="Dip Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Dip Sauce</h6><span class="sauce-price">Rs.80</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1474979266404-7eaacdc48a45?w=200&q=80&fit=crop" alt="Garlic Dip Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Garlic Dip</h6><span class="sauce-price">Rs.80</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200&q=80&fit=crop" alt="Imli Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Imli Sauce</h6><span class="sauce-price">Rs.80</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1590987337605-4e6fb7d168dc?w=200&q=80&fit=crop" alt="Green Chilli Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Green Chilli</h6><span class="sauce-price">Rs.80</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1615478503562-ec2d8aa0a24e?w=200&q=80&fit=crop" alt="1000 Island Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>1000 Island</h6><span class="sauce-price">Rs.100</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?w=200&q=80&fit=crop" alt="Chilli Milli" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Chilli Milli</h6><span class="sauce-price">Rs.100</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1619221882220-947b3d3c8861?w=200&q=80&fit=crop" alt="Pizza Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Pizza Sauce</h6><span class="sauce-price">Rs.100</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="50">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200&q=80&fit=crop" alt="Mustard Sauce" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Mustard</h6><span class="sauce-price">Rs.100</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="sauce-card">
+              <div class="sauce-img"><img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=200&q=80&fit=crop" alt="Honey Mustard" loading="lazy" /></div>
+              <div class="sauce-info"><h6>Honey Mustard</h6><span class="sauce-price">Rs.100</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="cta-banner">
+    <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=80&fit=crop')"></div>
+    <div class="cta-overlay"></div>
+    <div class="container text-center position-relative" style="z-index:2;" data-aos="zoom-in">
+      <span class="cta-label">Hungry?</span>
+      <h2 class="cta-title">Don't Wait, <span>Order Now!</span></h2>
+      <p class="cta-desc">Call us or visit our restaurant for the ultimate food experience</p>
+      <div class="cta-btns">
+        <a href="tel:0414317000" class="btn btn-fire btn-lg"><i class="fas fa-phone-alt me-2"></i>041-4317000</a>
+        <a href="tel:03014317000" class="btn btn-ghost btn-lg"><i class="fas fa-phone-alt me-2"></i>0301-4317000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DEALS SECTION ========== -->
+  <section id="deals" class="deals-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Save More</span>
+        <h2 class="section-title">Hot <span class="text-golden">Deals</span></h2>
+        <p class="section-sub">Incredible value meals for you & your family</p>
+      </div>
+
+      <!-- Diamond Deals -->
+      <h3 class="deals-subtitle" data-aos="fade-right"><span class="deals-icon">💎</span> Diamond Deals</h3>
+      <div class="row g-4 mb-5">
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="deal-card diamond">
+            <div class="deal-header">
+              <span class="deal-num">01</span>
+              <span class="deal-type">Diamond</span>
+            </div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=300&q=80&fit=crop" alt="Deal 1" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Zinger Burger</li><li>1 Reg Fries</li><li>1 Reg Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.699</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="deal-card diamond">
+            <div class="deal-header">
+              <span class="deal-num">02</span>
+              <span class="deal-type">Diamond</span>
+            </div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=300&q=80&fit=crop" alt="Deal 2" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Zinger Burger</li><li>1 Half Pasta</li><li>500ml Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.880</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="deal-card diamond">
+            <div class="deal-header">
+              <span class="deal-num">04</span>
+              <span class="deal-type">Diamond</span>
+            </div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80&fit=crop" alt="Deal 4" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Small Pizza</li><li>1 Half Pasta</li><li>1 Reg Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.1020</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="deal-card diamond">
+            <div class="deal-header">
+              <span class="deal-num">05</span>
+              <span class="deal-type">Diamond</span>
+            </div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80&fit=crop" alt="Deal 5" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Zinger Burger</li><li>1.5 LTR Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.2030</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="deal-card diamond">
+            <div class="deal-header"><span class="deal-num">08</span><span class="deal-type">Diamond</span></div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=300&q=80&fit=crop" alt="Deal 8" loading="lazy" /></div>
+            <ul class="deal-items"><li>2 Zinger Burger</li><li>10 Pcs Hot Wings</li><li>500ml Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.1440</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="deal-card diamond">
+            <div class="deal-header"><span class="deal-num">09</span><span class="deal-type">Diamond</span></div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&q=80&fit=crop" alt="Deal 9" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Large Pizza</li><li>5 Hot Wings</li><li>5 Nuggets</li><li>1.5 LTR Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.2420</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="deal-card diamond">
+            <div class="deal-header"><span class="deal-num">10</span><span class="deal-type">Diamond</span></div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&q=80&fit=crop" alt="Deal 10" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Large Pizza</li><li>1 Medium Pizza</li><li>1.5 LTR Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.2730</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="deal-card diamond">
+            <div class="deal-header"><span class="deal-num">11</span><span class="deal-type">Diamond</span></div>
+            <div class="deal-img"><img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=300&q=80&fit=crop" alt="Deal 11" loading="lazy" /></div>
+            <ul class="deal-items"><li>1 Large Pizza</li><li>10 Hot Wings</li><li>1.5 LTR Drink</li></ul>
+            <div class="deal-price-wrap"><span class="deal-price">Rs.2280</span></div>
+            <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Combo Deals -->
+      <h3 class="deals-subtitle" data-aos="fade-right"><span class="deals-icon">🔥</span> Combo Deals</h3>
+      <div class="row g-4 mb-5">
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up"><div class="deal-card combo">
+          <div class="deal-header"><span class="deal-num">C3</span><span class="deal-type combo-type">Combo</span></div>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80&fit=crop" alt="Combo 3" loading="lazy" /></div>
+          <ul class="deal-items"><li>2 Medium Pizza</li><li>1.5 LTR Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.2280</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50"><div class="deal-card combo">
+          <div class="deal-header"><span class="deal-num">C4</span><span class="deal-type combo-type">Combo</span></div>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&q=80&fit=crop" alt="Combo 4" loading="lazy" /></div>
+          <ul class="deal-items"><li>2 Large Pizza</li><li>1.5 LTR Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.3160</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="deal-card combo">
+          <div class="deal-header"><span class="deal-num">C5</span><span class="deal-type combo-type">Combo</span></div>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&q=80&fit=crop" alt="Combo 5" loading="lazy" /></div>
+          <ul class="deal-items"><li>1 Large Pizza</li><li>1 Medium Pizza</li><li>1 Full Pasta</li><li>10 Hot Wings</li><li>2x 1.5 LTR Drinks</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.4099</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150"><div class="deal-card combo">
+          <div class="deal-header"><span class="deal-num">C6</span><span class="deal-type combo-type">Combo</span></div>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=80&fit=crop" alt="Combo 6" loading="lazy" /></div>
+          <ul class="deal-items"><li>1 Large Pizza</li><li>1 Medium Pizza</li><li>1 Full Pasta</li><li>1.5 LTR Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.3310</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+      </div>
+
+      <!-- Special Deals -->
+      <h3 class="deals-subtitle" data-aos="fade-right"><span class="deals-icon">⚡</span> Special Deals</h3>
+      <div class="row g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up"><div class="deal-card special">
+          <div class="deal-header"><span class="deal-num">13</span><span class="deal-type special-type">Special</span></div>
+          <span class="no-discount">No More Discount</span>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&q=80&fit=crop" alt="Deal 13" loading="lazy" /></div>
+          <ul class="deal-items"><li>1 Special Zinger Burger</li><li>1 Kaly's Special Pasta</li><li>1 Reg. Cold Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.999</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50"><div class="deal-card special">
+          <div class="deal-header"><span class="deal-num">14</span><span class="deal-type special-type">Special</span></div>
+          <span class="no-discount">No More Discount</span>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=300&q=80&fit=crop" alt="Deal 14" loading="lazy" /></div>
+          <ul class="deal-items"><li>2 Zinger Burger</li><li>2 Broast Chicken Pcs Fries</li><li>1 Dinner Roll</li><li>1 Ltr. Cold Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.1399</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="deal-card special">
+          <div class="deal-header"><span class="deal-num">15</span><span class="deal-type special-type">Special</span></div>
+          <span class="no-discount">No More Discount</span>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&q=80&fit=crop" alt="Deal 15" loading="lazy" /></div>
+          <ul class="deal-items"><li>1 Small Pizza</li><li>1 Zinger Burger</li><li>1 500ml Cold Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.950</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150"><div class="deal-card special">
+          <div class="deal-header"><span class="deal-num">16</span><span class="deal-type special-type">Special</span></div>
+          <span class="no-discount">No More Discount</span>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80&fit=crop" alt="Deal 16" loading="lazy" /></div>
+          <ul class="deal-items"><li>1 Small Pizza</li><li>1 Reg Fries</li><li>1 Reg Cold Drink</li></ul>
+          <div class="deal-price-wrap"><span class="deal-price">Rs.799</span></div>
+          <a href="tel:0414317000" class="btn btn-fire btn-sm w-100">Order Now</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT US ========== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">About <span class="text-golden">Us</span></h2>
+      </div>
+
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-img-grid">
+            <div class="about-img main-img">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80&fit=crop" alt="Restaurant" loading="lazy" />
+            </div>
+            <div class="about-img side-img-1">
+              <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=300&q=80&fit=crop" alt="Fried Chicken" loading="lazy" />
+            </div>
+            <div class="about-img side-img-2">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&q=80&fit=crop" alt="Pizza" loading="lazy" />
+            </div>
+            <div class="about-exp-badge">
+              <span class="exp-number">Since</span>
+              <span class="exp-text">Day One</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-content">
+            <h3 class="about-headline">The Real Recipe <span>Since Day One</span></h3>
+            <p class="about-text">Kaly's Fri Chicken was born from a passion for bold flavours, crispy perfection, and community. Located in the heart of Jaranwala, we've been serving Jaranwala's finest fried chicken, gourmet burgers, premium pizzas, and hand-rolled shawarmas with one promise – <strong>if you can dream it, we deliver it.</strong></p>
+            <div class="about-tags">
+              <span class="about-tag">#LongLiveKaly's</span>
+              <span class="about-tag">#BestInJaranwala</span>
+              <span class="about-tag">#TheRealRecipe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row" data-aos="fade-up">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-shopping-bag"></i></div>
+          <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+          <p>Daily Orders</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-gem"></i></div>
+          <span class="stat-number" data-count="16">0</span><span class="stat-suffix">+</span>
+          <p>Diamond Deals</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-pizza-slice"></i></div>
+          <span class="stat-number" data-count="4">0</span><span class="stat-suffix">+</span>
+          <p>Premium Pizza Flavours</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-award"></i></div>
+          <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+          <p>Real Recipe</p>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="row g-4 mt-5">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-leaf"></i></div>
+            <h5>Fresh Ingredients</h5>
+            <p>Sourced daily, prepared with care</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-fire-flame-curved"></i></div>
+            <h5>Signature Recipes</h5>
+            <p>Secret sauces passed down with pride</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-shield-halved"></i></div>
+            <h5>Hygiene First</h5>
+            <p>Clean kitchen, clean conscience</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="value-card">
+            <div class="value-icon"><i class="fas fa-heart"></i></div>
+            <h5>Made with Love</h5>
+            <p>Every plate tells our story</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Contact <span class="text-golden">Us</span></h2>
+        <p class="section-sub">Have a question or want to place an order? Reach out!</p>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><h5>Our Location</h5><p>Near Police Khidmat Markaz, Circular Road, Jaranwala</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div><h5>Order Now</h5><p><a href="tel:0414317000">041-4317000</a><br><a href="tel:03014317000">0301-4317000</a></p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-headset"></i></div>
+              <div><h5>Complaints</h5><p><a href="tel:03414317000">0341-4317000</a></p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div><h5>Delivery Hours</h5><p>11:30am till 11:59pm</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-motorcycle"></i></div>
+              <div><h5>Minimum Order</h5><p>Rs.600 for delivery</p></div>
+            </div>
+            <div class="contact-social">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/923014317000" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <form class="contact-form" id="contactForm">
+            <div class="form-header">
+              <h4>Send us a Message</h4>
+              <p>We'll get back to you as soon as possible</p>
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="formName">Your Name *</label>
+                  <input type="text" class="form-control" id="formName" name="name" placeholder="Enter your name" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="formPhone">Phone Number *</label>
+                  <input type="tel" class="form-control" id="formPhone" name="phone" placeholder="03XX-XXXXXXX" required />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="formEmail">Email Address</label>
+                  <input type="email" class="form-control" id="formEmail" name="email" placeholder="your@email.com (optional)" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="formSubject">Subject *</label>
+                  <select class="form-select" id="formSubject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option>General Inquiry</option>
+                    <option>Complaint</option>
+                    <option>Catering Request</option>
+                    <option>Feedback</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="formMessage">Your Message *</label>
+                  <textarea class="form-control" id="formMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-fire btn-lg w-100">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                  <span class="btn-shine"></span>
+                </button>
+              </div>
+            </div>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand-block">
+              <h3 class="footer-logo"><span class="logo-emoji">🍗</span> Kaly's <span>Fri Chicken</span></h3>
+              <p class="footer-tagline-text">The Real Recipe</p>
+              <p class="footer-desc">Jaranwala's finest fried chicken, gourmet burgers, premium pizzas & hand-rolled shawarmas.</p>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/923014317000" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#deals">Deals</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h5 class="footer-heading">Menu</h5>
+            <ul class="footer-links">
+              <li><a href="#menu">Rolls & Shawarmas</a></li>
+              <li><a href="#menu">Burgers</a></li>
+              <li><a href="#menu">Pizza</a></li>
+              <li><a href="#menu">Pastas</a></li>
+              <li><a href="#menu">Arabic Rolls</a></li>
+              <li><a href="#menu">Sauces</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact & Hours</h5>
+            <ul class="footer-links footer-contact-list">
+              <li><i class="fas fa-phone-alt"></i><a href="tel:0414317000">041-4317000</a></li>
+              <li><i class="fas fa-phone-alt"></i><a href="tel:03014317000">0301-4317000</a></li>
+              <li><i class="fas fa-headset"></i><a href="tel:03414317000">0341-4317000</a></li>
+              <li><i class="fas fa-clock"></i>11:30am – 11:59pm</li>
+              <li><i class="fas fa-motorcycle"></i>Min Order: Rs.600</li>
+              <li><i class="fas fa-map-marker-alt"></i>Circular Road, Jaranwala</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Kaly's Fri Chicken. All Rights Reserved. <span class="footer-hashtag">#BestInJaranwala</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
